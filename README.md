@@ -1,8 +1,8 @@
 ## Todo 
 
 - [x] Integrate Supabase
-- [ ] Add authentication
-- [ ] Add user management
+- [x] Add authentication
 - [ ] Display images
 - [ ] Add image upload
 - [ ] Add image management
+- [ ] Add user management

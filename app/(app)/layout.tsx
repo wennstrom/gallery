@@ -20,10 +20,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  upload,
 }: Readonly<{
   children: React.ReactNode,
-  params: Promise<{ slug: string }>
-
+  upload: React.ReactNode
 }>) {
   
   return (
@@ -32,7 +32,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
+        <div className="container mx-auto">
         {children}
+        </div>
+        {upload}
       </body>
     </html>
   );
